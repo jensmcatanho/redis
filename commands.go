@@ -11,7 +11,7 @@ func readTimeout(timeout time.Duration) time.Duration {
 	if timeout == 0 {
 		return 0
 	}
-	return timeout + time.Second
+	return timeout + 5*time.Second
 }
 
 func usePrecise(dur time.Duration) bool {
